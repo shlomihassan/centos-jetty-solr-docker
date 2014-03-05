@@ -3,7 +3,7 @@ FROM centos
 MAINTAINER Chris Pilsworth cpilsworth@gmail.com
 
 # Get the RPM release and copy to temp
-ADD https://github.com/cpilsworth/jetty-solr-rpm/releases/download/v4.6.1-1beta1/jetty-solr-4.6.1-1.el6.noarch.rpm /tmp/jetty-solr-4.6.1-1.el6.noarch.rpm
+ADD https://github.com/cpilsworth/jetty-solr-rpm/releases/download/jetty-solr-4.6.1-1/jetty-solr-4.6.1-1.el6.noarch.rpm /tmp/jetty-solr-4.6.1-1.el6.noarch.rpm
 
 # Install dependencies
 RUN ["yum", "-y", "install", "java-1.7.0-openjdk", "mailx", "which"]
